@@ -40,6 +40,7 @@ dependencies {
 
     implementation "androidx.core:core-ktx:$version_core"
     implementation "androidx.appcompat:appcompat:$version_appcompat"
+    implementation "androidx.activity:activity-ktx:$version_activity"
     implementation "androidx.constraintlayout:constraintlayout:$version_constraint_layout"
 
     // Material Design

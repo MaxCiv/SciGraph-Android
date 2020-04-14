@@ -1,13 +1,21 @@
 package com.maxciv.scigraph
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
+import androidx.lifecycle.ViewModelProvider
+import com.maxciv.scigraph.viewmodel.MainViewModel
+import dagger.android.support.DaggerAppCompatActivity
+import javax.inject.Inject
 
 /**
  * @author maxim.oleynik
  * @since 14.04.2020
  */
-class MainActivity : AppCompatActivity() {
+class MainActivity : DaggerAppCompatActivity()  {
+
+    @Inject
+    lateinit var viewModelFactory: ViewModelProvider.Factory
+    private val viewModel: MainViewModel by viewModels { viewModelFactory }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.AppTheme)
