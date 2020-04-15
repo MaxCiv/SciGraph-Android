@@ -8,6 +8,7 @@
 
         <bitmap
             android:gravity="center"
-            android:src="@drawable/splash_logo" />
+            android:src="@drawable/splash_logo"
+            android:tint="@android:color/white" />
     </item>
 </layer-list>

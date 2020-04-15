@@ -61,7 +61,14 @@ dependencies {
     // Logger
     implementation "com.jakewharton.timber:timber:$version_timber"
 
-    //For tests
+    // SciGraph
+    implementation (group: 'com.scichart.library', name: 'core', version: "$version_scigraph", ext: 'aar')
+    implementation (group: 'com.scichart.library', name: 'data', version: "$version_scigraph", ext: 'aar')
+    implementation (group: 'com.scichart.library', name: 'drawing', version: "$version_scigraph", ext: 'aar')
+    implementation (group: 'com.scichart.library', name: 'charting', version: "$version_scigraph", ext: 'aar')
+    implementation (group: 'com.scichart.library', name: 'extensions', version: "$version_scigraph", ext: 'aar')
+
+    // For tests
     testImplementation 'junit:junit:4.13'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

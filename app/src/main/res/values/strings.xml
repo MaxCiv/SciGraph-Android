@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">SciGraph</string>
+    <string name="line_chart">Line chart</string>
+    <string name="scatter_chart">Scatter chart</string>
+    <string name="time">Time</string>
+    <string name="value">Value</string>
 </resources>

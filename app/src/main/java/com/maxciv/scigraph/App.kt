@@ -1,6 +1,7 @@
 package com.maxciv.scigraph
 
 import com.maxciv.scigraph.di.DaggerAppComponent
+import com.scichart.charting.visuals.SciChartSurface
 import dagger.android.AndroidInjector
 import dagger.android.DaggerApplication
 import timber.log.Timber
@@ -17,6 +18,8 @@ class App : DaggerApplication() {
         if (BuildConfig.DEBUG) {
             Timber.plant(Timber.DebugTree())
         }
+
+        SciChartSurface.setRuntimeLicenseKey(LICENSE_KEY)
     }
 
     override fun applicationInjector(): AndroidInjector<out DaggerApplication> {

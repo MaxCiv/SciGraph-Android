@@ -10,12 +10,13 @@ buildscript {
         version_kotlin_coroutines = "1.1.0"
         version_lifecycle = '2.2.0'
         version_material = '1.2.0-alpha06'
+        version_scigraph = '3.1.0.4322'
         version_timber = '4.7.1'
     }
     repositories {
         google()
         jcenter()
-        
+        maven { url 'https://www.myget.org/F/abtsoftware/maven' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$version_gradle"
@@ -27,6 +28,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url 'https://www.myget.org/F/abtsoftware/maven' }
     }
 }
 
