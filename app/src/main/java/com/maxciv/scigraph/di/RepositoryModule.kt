@@ -1,7 +1,8 @@
 package com.maxciv.scigraph.di
 
+import com.maxciv.scigraph.local.RandomDataService
 import com.maxciv.scigraph.repository.DataRepository
-import com.maxciv.scigraph.repository.RandomDataRepository
+import com.maxciv.scigraph.repository.LocalDataRepository
 import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
@@ -15,7 +16,7 @@ class RepositoryModule {
 
     @Provides
     @Singleton
-    fun provideDataRepository(): DataRepository {
-        return RandomDataRepository()
+    fun provideDataRepository(randomDataService: RandomDataService): DataRepository {
+        return LocalDataRepository(randomDataService)
     }
 }

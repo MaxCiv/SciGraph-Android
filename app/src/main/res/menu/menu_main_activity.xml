@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_change_load_mode"
+        android:icon="@drawable/ic_av_timer_black_24dp"
+        android:title="@string/change_update_speed"
+        app:iconTint="@android:color/white"
+        app:showAsAction="always" />
+</menu>

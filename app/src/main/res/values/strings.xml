@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name" translatable="false">SciGraph</string>
+
+    <string name="template_points_count">Points count: %1d</string>
+    <string name="template_update_interval">Update interval: %1dms</string>
+
     <string name="line_chart">Line chart</string>
     <string name="scatter_chart">Scatter chart</string>
     <string name="time">Time</string>
     <string name="value">Value</string>
+    <string name="change_update_speed">Change update speed</string>
 </resources>
