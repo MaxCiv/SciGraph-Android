@@ -1,0 +1,2 @@
+rootProject.name='SciGraph'
+include ':app'
